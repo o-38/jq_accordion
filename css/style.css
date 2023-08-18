@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*Chrome,Safari*/
+nav{
+  display: none;
+}
+.nav-open{
+  padding:15px;
+  color:black;
+  font-size: 20px;
+  background-color: #ff99cc;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+.nav-open::before{
+  content: "+";
+  position: absolute;
+  right: 20px;
+}
+.nav-open.active::before{
+  content: "×";
+}
+li{
+  padding:15px;
+  background-color:black;
+  font-size: 20px;
+  color: #ff99cc;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
